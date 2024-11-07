@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.subject {
+    margin-bottom: 20px;
+}

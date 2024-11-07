@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Growth Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Growth Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#daily">Daily Tracker</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#growth">Growth Log</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Your Personal Growth Tracker</h2>
+        <p>Track your progress in mastering CBSE Class 12 subjects.</p>
+    </section>
+
+    <section id="daily">
+        <h2>Daily Tracker</h2>
+        <div class="log-entry">
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+            <label for="task">Today's Tasks:</label>
+            <textarea id="task" placeholder="Write your tasks for today..."></textarea>
+            <button onclick="logEntry()">Log Entry</button>
+        </div>
+        <h3>Your Logs</h3>
+        <ul id="log-list">
+            <!-- Daily tasks will be displayed here -->
+        </ul>
+    </section>
+
+    <section id="subjects">
+        <h2>Subject Progress</h2>
+        <div class="subject">
+            <h3>Physics</h3>
+            <input type="number" id="physics-progress" placeholder="Enter % progress">
+            <button onclick="updateProgress('physics')">Update Progress</button>
+        </div>
+        <div class="subject">
+            <h3>Chemistry</h3>
+            <input type="number" id="chemistry-progress" placeholder="Enter % progress">
+            <button onclick="updateProgress('chemistry')">Update Progress</button>
+        </div>
+        <div class="subject">
+            <h3>Biology</h3>
+            <input type="number" id="biology-progress" placeholder="Enter % progress">
+            <button onclick="updateProgress('biology')">Update Progress</button>
+        </div>
+        <div class="subject">
+            <h3>English</h3>
+            <input type="number" id="english-progress" placeholder="Enter % progress">
+            <button onclick="updateProgress('english')">Update Progress</button>
+        </div>
+        <div class="subject">
+            <h3>Maths</h3>
+            <input type="number" id="maths-progress" placeholder="Enter % progress">
+            <button onclick="updateProgress('maths')">Update Progress</button>
+        </div>
+        <div class="subject">
+            <h3>Physical Education</h3>
+            <input type="number" id="pe-progress" placeholder="Enter % progress">
+            <button onclick="updateProgress('pe')">Update Progress</button>
+        </div>
+    </section>
+
+    <section id="growth">
+        <h2>Growth Log</h2>
+        <textarea id="growth-log" placeholder="Reflect on your progress and areas of improvement..."></textarea>
+        <button onclick="saveGrowthLog()">Save Growth Log</button>
+        <h3>Your Growth Logs</h3>
+        <ul id="growth-list">
+            <!-- Growth logs will be displayed here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Personal Growth Tracker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
